@@ -1,4 +1,8 @@
-#The below function is essentially a wrapper written to simulate null distributions under different evolutionary models from mvMORPH and geiger.  Following Garland et al., a null distribution is simulated based on the evolutionary model chosen and the phylogeny.  The code borrows heavily from the R pacakge geiger. Moreover, this has only been tested with the data from Soghigian et al. and a few simulations, so it is a good idea to ensure results make sense through other potential analyses as well! 
+#This R function is essentially a wrapper written to simulate null distributions under different evolutionary 
+#models from mvMORPH and geiger.  Following Garland et al., a null distribution is simulated based on the 
+#evolutionary model chosen and the phylogeny.  The code borrows heavily from the R pacakge geiger. Moreover, 
+#this has only been tested with the data from Soghigian et al. and a few simulations, so it is a good idea to 
+#ensure results make sense through other potential analyses as well! 
 phyaov <- function (formula, phy, nsim = 1000, test = c("Wilks", "Pillai", 
         "Hotelling-Lawley", "Roy"),preset=NULL,model=c("BM","OU","EB","OUM"),
           maxit=1000,...) 
